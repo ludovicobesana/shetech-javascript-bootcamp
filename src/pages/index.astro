@@ -3,33 +3,35 @@ import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 ---
 
-<Layout title="Welcome to Astro.">
-	<main>
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
+<Layout title="Shetech Javascript Bootcamp">
+	<main>	
+		<img src="/shetech-logo.png"/>
+		<h1>Welcome to <span class="text-gradient">SheTech</span></h1>
+		<h2 class="yellow-gradient">Javascript Bootcamp</h2>
 		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
+			To get started, click on <code>Tutorial</code> card.<br />
+			<strong>Remember:</strong> If you don't finish the course, you can access the resourses anytime and another thing: It's free.
 		</p>
 		<ul role="list" class="link-card-grid">
 			<Card
 				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
-			/>
-			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
+				title="Tutorial"
+				body="Learn how Javascript works"
 			/>
 			<Card
 				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
+				title="Mentors"
+				body="Explore the bootcamp mentors"
 			/>
 			<Card
-				href="https://astro.build/chat/"
+				href="https://astro.build/themes/"
+				title="Sharing"
+				body="Take a photo while studying our bootcamp and mention @shetech_italy"
+			/>
+			<Card
+				href="https://shetechitaly.org/unisciti-a-noi/"
 				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
+				body="Join in our community!"
 			/>
 		</ul>
 	</main>
@@ -46,17 +48,28 @@ import Card from '../components/Card.astro';
 		font-weight: 800;
 		margin: 0;
 	}
+	h2 {
+		font-size: 2rem;
+		font-weight: 800;
+		margin: 0;
+	}
+	img {
+		height: auto;
+	}
 	.text-gradient {
-		background-image: var(--accent-gradient);
+		background: linear-gradient(104deg, #A90493 0%, #FC6568 100%) 0% 0% no-repeat padding-box;
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
+	}
+	.yellow-gradient {
+		background: linear-gradient(97deg, rgba(253,187,45,1) 0%, rgba(247,238,44,1) 100%);
+		-webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
 	}
 	.instructions {
 		line-height: 1.6;
 		margin: 1rem 0;
-		border: 1px solid rgba(var(--accent), 25%);
+		border: 1px solid rgba(253,187,45,1);
 		background-color: white;
 		padding: 1rem;
 		border-radius: 0.4rem;
@@ -64,13 +77,13 @@ import Card from '../components/Card.astro';
 	.instructions code {
 		font-size: 0.875em;
 		font-weight: bold;
-		background: rgba(var(--accent), 12%);
-		color: rgb(var(--accent));
+		background: #FAFAFA;
+		color: rgba(253,187,45,1);
 		border-radius: 4px;
 		padding: 0.3em 0.45em;
 	}
 	.instructions strong {
-		color: rgb(var(--accent));
+		color: rgba(253,187,45,1);
 	}
 	.link-card-grid {
 		display: grid;
