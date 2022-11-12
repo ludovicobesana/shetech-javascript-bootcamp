@@ -1,0 +1,172 @@
+---
+import Layout from '../layouts/Layout.astro';
+import MentorCard from '../components/MentorCard.astro';
+---
+
+<Layout title="Shetech Javascript Bootcamp">
+	<main>	
+		<a class="github-fork-ribbon" href="https://github.com/ludovicobesana/shetech-javascript-bootcamp" data-ribbon="Contribute on GitHub" title="Contribute on GitHub">Contribute on GitHub</a>
+		<style>.github-fork-ribbon:before { background-color: #A90493; }</style>
+		<img src="/shetech-logo.png"/>
+		<h1>Our <span class="text-gradient">Mentors</span></h1>
+		<h2 class="yellow-gradient">Javascript Bootcamp</h2>
+		<p class="instructions">
+			These are the people who will help you during this bootcamp. <br>
+			Here you will find all their references. <br>
+If you want to go back to the home <strong><a href="/">click here</a></strong>.
+		</p>
+		<ul role="list" class="link-card-grid">
+		<MentorCard
+			href="/"
+			title="Marina Caporlingua"
+			body="Data Analyst"
+			src="/marina.jpg"
+		/>
+		<MentorCard
+		href="https://it.linkedin.com/in/marianna-rotoli"
+		title="Marianna Rotoli"
+		body="Software Analyst"
+		src="/marianna.jpg"
+	    />
+	 	
+		<MentorCard
+		href="https://it.linkedin.com/in/ludovicobesana"
+		title="Ludovico Besana"
+		body="QA Engineer"
+		src="/ludo.png"
+		/>
+		<MentorCard
+		href="https://it.linkedin.com/in/anitaliberatore"
+		title="Anita Liberatore"
+		body="Software developer"
+		src="/anita.jpg"
+	/>
+	<MentorCard
+	href="https://it.linkedin.com/in/stefania-bottari"
+	title="Stefania Bottari"
+	body="Senior software engineer"
+	src="/stefania.jpg"
+/>
+<MentorCard
+href="https://it.linkedin.com/in/fabiola-d-ercole-422ab222a"
+title="Fabiola D'Erole"
+body="Analyst"
+src="/fabiola.jpg"
+/>
+ 
+<MentorCard
+href="https://it.linkedin.com/in/antonio-de-piano-4993068a"
+title="Antonio De Piano"
+body="IT Consultant"
+src="/antonio.jpg"
+/>
+<MentorCard
+href="/"
+title="Angelo Pasciuti"
+body="Software developer"
+src="/angelo.jpg"
+/>
+<MentorCard
+href="/"
+title="Rosaria Cozzolino"
+body="Consultant"
+src="/rosaria.jpg"
+/>
+<MentorCard
+href="/"
+title="Marta Paolucci"
+body="Analyst"
+src="/marta.jpg"
+/>
+
+<MentorCard
+href="/"
+title="Giovanni Colucci"
+body="Digital Cloud Developer"
+src="/giovanni.jpg"
+/>
+<MentorCard
+href="/"
+title="Anna Mafrica"
+body="Digital Care Consultant"
+src="/anna.jpg"
+/>
+<MentorCard
+href="/"
+title="Domenico Fiorilli"
+body="SAP Senior Consultant"
+src="/domenico.jpg"
+/>
+
+<MentorCard
+href="/"
+title="Antonietta Lapenta "
+body="Analista tecnico-funzionale"
+src="/antonietta.jpg"
+/>
+<MentorCard
+href="/"
+title="Matteo Convertino"
+body="Senior Consultant"
+src="/matteo.png"
+/>
+			
+		</ul>
+	</main>
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1.5rem;
+		max-width: 60ch;
+	}
+	h1 {
+		font-size: 3rem;
+		font-weight: 800;
+		margin: 0;
+	}
+	h2 {
+		font-size: 2rem;
+		font-weight: 800;
+		margin: 0;
+	}
+	img {
+		height: auto;
+	}
+	.text-gradient {
+		background: linear-gradient(104deg, #A90493 0%, #FC6568 100%) 0% 0% no-repeat padding-box;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+	.yellow-gradient {
+		background: linear-gradient(97deg, rgba(253,187,45,1) 0%, rgba(247,238,44,1) 100%);
+		-webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+	}
+	.instructions {
+		line-height: 1.6;
+		margin: 1rem 0;
+		border: 1px solid rgba(253,187,45,1);
+		background-color: white;
+		padding: 1rem;
+		border-radius: 0.4rem;
+	}
+	.instructions code {
+		font-size: 0.875em;
+		font-weight: bold;
+		background: #FAFAFA;
+		color: rgba(253,187,45,1);
+		border-radius: 4px;
+		padding: 0.3em 0.45em;
+	}
+	.instructions strong {
+		color: rgba(253,187,45,1);
+	}
+	.link-card-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+		gap: 1rem;
+		padding: 0;
+	}
+</style>
